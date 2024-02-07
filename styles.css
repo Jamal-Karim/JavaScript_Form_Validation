@@ -81,3 +81,25 @@ body{
 #email:valid{
     border: 2px solid green;
 }
+
+#country:focus{
+    outline: 0;
+}
+
+#country:invalid{
+    border: 2px solid red;
+}
+#country:valid{
+    border: 2px solid green;
+}
+
+#zip:focus{
+    outline: 0;
+}
+
+#zip:invalid{
+    border: 2px solid red;
+}
+#zip:valid{
+    border: 2px solid green;
+}

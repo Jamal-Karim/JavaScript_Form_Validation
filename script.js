@@ -14,3 +14,26 @@ email.addEventListener('input', () => {
     
     console.log(email.validity.typeMismatch);
 })
+
+const country = document.getElementById('country');
+
+// country.addEventListener('input', () => {
+//     const countryValue = country.value.trim();
+//     const lettersRegex = /^[A-Za-z]+$/;
+
+//     if (!lettersRegex.test(countryValue)) {
+//         errorMessage.innerHTML = 'Please enter only letters';
+//     } else {
+//         errorMessage.innerHTML = '';
+//     }
+// });
+
+const zipcode = document.getElementById('zip');
+
+zipcode.addEventListener('input', () => {
+    if (zipcode.validity.patternMismatch) {
+        zipcode.setCustomValidity('The zip code must be 5 digits.');
+    } else {
+        zipcode.setCustomValidity('');
+    }
+});
